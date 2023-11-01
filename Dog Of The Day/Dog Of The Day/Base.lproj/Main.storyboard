@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dog_Of_The_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tBR-NU-Wwe">
+                                <rect key="frame" x="83.333333333333329" y="99" width="208.66666666666669" height="157"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xWM-lB-PQ3">
+                                        <rect key="frame" x="54.333333333333329" y="0.0" width="99.999999999999986" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="UU4-KK-fde"/>
+                                            <constraint firstAttribute="width" constant="100" id="gLA-jh-BOO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog of the day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7e-bE-zsm">
+                                        <rect key="frame" x="0.0" y="115" width="208.66666666666666" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                        <color key="textColor" red="0.1058823529" green="0.42352941179999998" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beagle1" translatesAutoresizingMaskIntoConstraints="NO" id="IPM-jz-4Ws">
+                                <rect key="frame" x="0.0" y="281" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="n69-Qt-WYF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IPM-jz-4Ws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Fa-SP-0XD"/>
+                            <constraint firstItem="IPM-jz-4Ws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ch2-Dp-7C8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IPM-jz-4Ws" secondAttribute="trailing" id="F0f-aS-1vJ"/>
+                            <constraint firstItem="IPM-jz-4Ws" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FfI-8D-XT6"/>
+                            <constraint firstItem="IPM-jz-4Ws" firstAttribute="top" secondItem="tBR-NU-Wwe" secondAttribute="bottom" constant="25" id="Jek-fs-uKc"/>
+                            <constraint firstItem="tBR-NU-Wwe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f93-7S-l0d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doggoImageView" destination="IPM-jz-4Ws" id="tMD-zH-UAr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="109.35960591133005"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Beagle1" width="243" height="162"/>
+        <image name="logo" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>
